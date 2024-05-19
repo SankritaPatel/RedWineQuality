@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction</title>
+    <style>
+        body{
+            background-color: rgb(2, 2, 36);
+        }
+        .form-detail {
+            padding: 30px;
+            font-size: 16px;
+            text-align: center;
+            background: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .form-detail h2 {
+            margin-bottom: 20px;
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        .form-row label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+        .form-row input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 160px);
+        }
+        .form-row-last {
+            margin-top: 20px;
+        }
+        .form-row-last input {
+            padding: 10px 20px;
+            background-color: #d95252;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="form-detail" action="/predict" method="post">
+            <h2>Wine Quality Prediction</h2>
+            <div class="form-row">
+                <label for="fixed_acidity">Fixed Acidity:</label>
+                <input type="text" name="fixed_acidity" id="fixed_acidity" placeholder="Fixed Acidity" required>
+            </div>
+
+            <div class="form-row">
+                <label for="volatile_acidity">Volatile Acidity:</label>
+                <input type="text" name="volatile_acidity" id="volatile_acidity" placeholder="Volatile Acidity" required>
+            </div>
+            <div class="form-row">
+                <label for="citric_acid">Citric Acid:</label>
+                <input type="text" name="citric_acid" id="citric_acid" placeholder="Citric Acid" required>
+            </div>
+            <div class="form-row">
+                <label for="residual_sugar">Residual Sugar:</label>
+                <input type="text" name="residual_sugar" id="residual_sugar" placeholder="Residual Sugar" required>
+            </div>
+            <div class="form-row">
+                <label for="chlorides">Chlorides:</label>
+                <input type="text" name="chlorides" id="chlorides" placeholder="Chlorides" required>
+            </div>
+
+            <div class="form-row">
+                <label for="free_sulfur_dioxide">Free Sulfur Dioxide:</label>
+                <input type="text" name="free_sulfur_dioxide" id="free_sulfur_dioxide" placeholder="Free Sulfur Dioxide" required>
+            </div>
+            <div class="form-row">
+                <label for="total_sulfur_dioxide">Total Sulfur Dioxide:</label>
+                <input type="text" name="total_sulfur_dioxide" id="total_sulfur_dioxide" placeholder="Total Sulfur Dioxide" required>
+            </div>
+
+            <div class="form-row">
+                <label for="density">Density:</label>
+                <input type="text" name="density" id="density" placeholder="Density" required>
+            </div>
+            <div class="form-row">
+                <label for="pH">pH:</label>
+                <input type="text" name="pH" id="pH" placeholder="pH" required>
+            </div>
+            <div class="form-row">
+                <label for="sulphates">Sulphates:</label>
+                <input type="text" name="sulphates" id="sulphates" placeholder="Sulphates" required>
+            </div>
+            <div class="form-row">
+                <label for="alcohol">Alcohol:</label>
+                <input type="text" name="alcohol" id="alcohol" placeholder="Alcohol" required>
+            </div>
+            <div class="form-row-last">
+                <input type="submit" name="register" class="register" value="Predict">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
