@@ -11,3 +11,6 @@
 7. update the pipeline
 8. update the main.py
 9. update the app.py
+
+URI
+905418280077.dkr.ecr.ap-south-1.amazonaws.com/mlproject
