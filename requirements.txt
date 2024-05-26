@@ -10,4 +10,4 @@ joblib
 types-pyYAML
 flask
 
--e .
+# -e .
